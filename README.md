@@ -37,7 +37,6 @@ Prediction:
 ```html
 ## 2. 整體架構
 
-```
 ### Stage 1 & Stage 2：候選秒檢索與時間區間生成
 
 <p align="center">
