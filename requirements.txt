@@ -1,0 +1,10 @@
+torch
+transformers
+accelerate
+numpy
+opencv-python
+Pillow
+tqdm
+pydantic
+pydantic-ai
+ollama
