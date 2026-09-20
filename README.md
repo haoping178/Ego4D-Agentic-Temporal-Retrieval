@@ -37,7 +37,45 @@ Prediction:
 ## 2. 整體架構
 
 ```
-<img width="1227" height="821" alt="image" src="https://github.com/user-attachments/assets/48f23571-fc9e-4eae-a493-62f7932d8ff2" />
+                    Natural Language Query
+                              │
+                              ▼
+              ┌─────────────────────────────┐
+              │ Stage 1                     │
+              │ Temporal Retrieval          │
+              │                             │
+              │ Qwen3-VL-Embedding-2B       │
+              │ Query / Video Embedding     │
+              │ Cosine Similarity           │
+              └──────────────┬──────────────┘
+                             │
+                    Top-30 Candidate Seconds
+                             │
+                             ▼
+              ┌─────────────────────────────┐
+              │ Stage 2                     │
+              │ Temporal Proposal           │
+              │                             │
+              │ Multi-scale Durations       │
+              │ Proposal Score              │
+              │ Local Contrast              │
+              │ NMS + Reranking             │
+              └──────────────┬──────────────┘
+                             │
+                       Top-5 Segments
+                             │
+                             ▼
+              ┌─────────────────────────────┐
+              │ Stage 3                     │
+              │ VLM Agent Refinement        │
+              │                             │
+              │ Keyframe Inspection         │
+              │ Boundary Refinement         │
+              │ Multimodal Reranking        │
+              └──────────────┬──────────────┘
+                             │
+                             ▼
+                   Final Temporal Prediction
 
 ```
 
