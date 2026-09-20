@@ -34,12 +34,17 @@ Prediction:
 
 ---
 
+```html
 ## 2. 整體架構
 
 ```
+### Stage 1 & Stage 2：候選秒檢索與時間區間生成
+
 <p align="center">
   <img src="assets/stage1_stage2_image.png" width="900">
 </p>
+
+### Stage 3：VLM Agent 邊界修正與最終重排
 
 <p align="center">
   <img src="assets/stage3_image.png" width="900">
