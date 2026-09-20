@@ -48,7 +48,6 @@ Prediction:
   <img src="assets/stage3_image.png" width="900">
 </p>
 
----
 
 ---
 
