@@ -388,8 +388,37 @@ Repository 不提供 Ego4D 原始影片。
 
 使用者需要自行取得 Ego4D Dataset，並修改程式中的 dataset/video path。
 
+12. 不包含於 Repository 的大型檔案
 
-12. Acknowledgements
+為避免 GitHub Repository 過大，下列資料不會上傳：
+
+Ego4D Videos
+Qwen Model Weights
+*.npy / *.npz Embeddings
+Stage 1 Retrieval Results
+Stage 2 Retrieval Results
+Stage 3 Retrieval Results
+Evaluation Results
+Python Cache
+
+這些內容已透過 .gitignore 排除。
+
+13. 研究題目
+
+A Training-Free Agentic Temporal Retrieval Framework for Natural Language Query Localization
+
+本 Repository 為此研究之實驗程式與三階段 NLQ pipeline 實作。
+
+14. Citation
+
+若本研究正式發表，Citation 資訊將於後續更新。
+
+@article{three_stage_nlq_2026,
+  title={A Training-Free Agentic Temporal Retrieval Framework for Natural Language Query Localization},
+  year={2026}
+}
+
+15. Acknowledgements
 
 本專案使用或參考以下專案與資源：
 
