@@ -1,0 +1,31 @@
+# Qwen model
+Qwen3-VL-Embedding/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Large embeddings
+*.npy
+*.npz
+
+# Videos
+*.mp4
+*.avi
+*.mkv
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
