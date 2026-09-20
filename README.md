@@ -37,46 +37,13 @@ Prediction:
 ## 2. 整體架構
 
 ```
-                    Natural Language Query
-                              │
-                              ▼
-              ┌─────────────────────────────┐
-              │ Stage 1                     │
-              │ Temporal Retrieval          │
-              │                             │
-              │ Qwen3-VL-Embedding-2B       │
-              │ Query / Video Embedding     │
-              │ Cosine Similarity           │
-              └──────────────┬──────────────┘
-                             │
-                    Top-30 Candidate Seconds
-                             │
-                             ▼
-              ┌─────────────────────────────┐
-              │ Stage 2                     │
-              │ Temporal Proposal           │
-              │                             │
-              │ Multi-scale Durations       │
-              │ Proposal Score              │
-              │ Local Contrast              │
-              │ NMS + Reranking             │
-              └──────────────┬──────────────┘
-                             │
-                       Top-5 Segments
-                             │
-                             ▼
-              ┌─────────────────────────────┐
-              │ Stage 3                     │
-              │ VLM Agent Refinement        │
-              │                             │
-              │ Keyframe Inspection         │
-              │ Boundary Refinement         │
-              │ Multimodal Reranking        │
-              └──────────────┬──────────────┘
-                             │
-                             ▼
-                   Final Temporal Prediction
+<p align="center">
+  <img src="assets/stage1_stage2_image.png" width="900">
+</p>
 
+<p align="center">
+  <img src="assets/stage3_image.png" width="900">
+</p>
 ```
 
 ---
