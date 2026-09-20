@@ -34,7 +34,6 @@ Prediction:
 
 ---
 
-```html
 ## 2. 整體架構
 
 ### Stage 1 & Stage 2：候選秒檢索與時間區間生成
@@ -48,7 +47,8 @@ Prediction:
 <p align="center">
   <img src="assets/stage3_image.png" width="900">
 </p>
-```
+
+---
 
 ---
 
